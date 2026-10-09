@@ -1,0 +1,37 @@
+{
+  "categorical": [
+    "Gender",
+    "MaritalStatus",
+    "Department",
+    "JobRole",
+    "WorkMode",
+    "BusinessTravel",
+    "AIJobRisk"
+  ],
+  "numeric": [
+    "Age",
+    "JobLevel",
+    "MonthlyIncome",
+    "StockOptionLevel",
+    "PercentSalaryHike",
+    "TotalWorkingYears",
+    "YearsAtCompany",
+    "YearsInCurrentRole",
+    "YearsSinceLastPromotion",
+    "NumCompaniesWorked",
+    "CommuteMinutes",
+    "OvertimeHours",
+    "TrainingHoursLastYear",
+    "ManagerSupport",
+    "BurnoutScore",
+    "EngagementScore",
+    "JobSatisfaction",
+    "WorkLifeBalance",
+    "PerformanceRating",
+    "AIToolsUsageHours"
+  ],
+  "target": "Attrition",
+  "drop": [
+    "EmployeeID"
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "decision_tree": {
+    "accuracy": 0.743,
+    "precision": 0.4337,
+    "recall": 0.7512,
+    "f1": 0.5499,
+    "roc_auc": 0.7922,
+    "confusion_matrix": [
+      [
+        586,
+        205
+      ],
+      [
+        52,
+        157
+      ]
+    ]
+  },
+  "random_forest": {
+    "accuracy": 0.784,
+    "precision": 0.4881,
+    "recall": 0.6842,
+    "f1": 0.5697,
+    "roc_auc": 0.8207,
+    "confusion_matrix": [
+      [
+        641,
+        150
+      ],
+      [
+        66,
+        143
+      ]
+    ]
+  },
+  "best_params": {
+    "dt": {
+      "clf__criterion": "entropy",
+      "clf__max_depth": 4,
+      "clf__min_samples_split": 2
+    },
+    "rf": {
+      "clf__max_depth": 8,
+      "clf__min_samples_split": 5,
+      "clf__n_estimators": 300
+    }
+  },
+  "top_features": [
+    {
+      "feature": "BurnoutScore",
+      "importance": 0.2119
+    },
+    {
+      "feature": "EngagementScore",
+      "importance": 0.141
+    },
+    {
+      "feature": "OvertimeHours",
+      "importance": 0.0949
+    },
+    {
+      "feature": "ManagerSupport",
+      "importance": 0.057
+    },
+    {
+      "feature": "JobSatisfaction",
+      "importance": 0.0503
+    },
+    {
+      "feature": "MonthlyIncome",
+      "importance": 0.0411
+    },
+    {
+      "feature": "CommuteMinutes",
+      "importance": 0.0406
+    },
+    {
+      "feature": "AIToolsUsageHours",
+      "importance": 0.0284
+    },
+    {
+      "feature": "PercentSalaryHike",
+      "importance": 0.0272
+    },
+    {
+      "feature": "TrainingHoursLastYear",
+      "importance": 0.0269
+    },
+    {
+      "feature": "Age",
+      "importance": 0.0251
+    },
+    {
+      "feature": "YearsSinceLastPromotion",
+      "importance": 0.0219
+    },
+    {
+      "feature": "YearsAtCompany",
+      "importance": 0.0218
+    },
+    {
+      "feature": "TotalWorkingYears",
+      "importance": 0.0206
+    },
+    {
+      "feature": "WorkLifeBalance",
+      "importance": 0.019
+    }
+  ],
+  "test_size": 1000,
+  "positive_rate": 0.2094
+}
